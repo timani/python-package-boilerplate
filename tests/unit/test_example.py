@@ -1,6 +1,8 @@
+from datetime import date
+
 from tests import *
 from tests.helpers import *
-from datetime import date
+
 
 class TestExample(unittest.TestCase):
 
@@ -8,7 +10,7 @@ class TestExample(unittest.TestCase):
         self.assertEqual(MyHelper.days_ago(date.today()), 0)
 
     def test_other_helper(self):
-        assert tests_helper.list_has(3, [1,2,3])
+        assert tests_helper.list_has(3, [1, 2, 3])
 
     def test_pass(self):
         self.assertEqual(True, True)
